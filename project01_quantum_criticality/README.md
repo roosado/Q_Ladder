@@ -10,16 +10,17 @@
 | # | Title |
 |---|-------|
 | 00 | Introduction and Prerequisites |
-| 01 | Finite-size scaling and critical exponents from the 2D Ising model |
-| 02 | Ising model with external field — first-order vs continuous transitions |
-| 03 | The XY model and the Kosterlitz-Thouless transition |
-| 04 | Classical to quantum: the Heisenberg model and exact diagonalisation |
-| 05 | 1D Transverse-Field Ising Model — Hamiltonian construction with Pauli matrices |
-| 06 | Quantum phase transition and finite-size scaling in the TFIM |
-| 07 | Entanglement entropy and the area law vs logarithmic scaling |
-| 08 | Matrix Product State representation by hand via SVD truncation |
-| 09 | DMRG using TeNPy for systems beyond exact diagonalisation |
-| 10 | Kitaev chain — topology, Majorana edge modes, and connection to quantum computing |
+| 01 | The 2D Ising Model — Metropolis Monte Carlo and the ferromagnetic phase transition |
+| 02 | Finite-size scaling and critical exponents |
+| 03 | Ising model with external field — first-order vs continuous transitions |
+| 04 | The XY model and the Kosterlitz-Thouless transition |
+| 05 | Classical to quantum: the Heisenberg model and exact diagonalisation |
+| 06 | 1D Transverse-Field Ising Model — Hamiltonian construction with Pauli matrices |
+| 07 | Quantum phase transition and finite-size scaling in the TFIM |
+| 08 | Entanglement entropy and the area law vs logarithmic scaling |
+| 09 | Matrix Product State representation by hand via SVD truncation |
+| 10 | DMRG using TeNPy for systems beyond exact diagonalisation |
+| 11 | Kitaev chain — topology, Majorana edge modes, and connection to quantum computing |
 
 ## Setup
 
