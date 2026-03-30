@@ -3,7 +3,9 @@
 A progressive, open-source Jupyter notebook curriculum for quantum technology students,
 modelled on Lorena Barba's *12 Steps to Navier-Stokes*.
 
-Developed by students of the Quantum Technology Masters programme at Uppsala University.
+Developed by students of the Quantum Technology Masters programme at Uppsala University. 
+
+The project framework is all written by Claude, along with the first versions of the notebooks and lecture notes. These are then used by us to verify, fill in conceptual gaps, adjust pedagogical flow, and ultimately *learn by doing*. All the topics come from our own interests and are built for us to grow our understanding towards state-of-the-art research. We aim to use code in our road to self-learning and preparation for our thesis projects.
 
 ## Phase 1 Projects
 
