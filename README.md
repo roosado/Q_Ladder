@@ -16,8 +16,7 @@ Developed by students of the Quantum Technology Masters programme at Uppsala Uni
 ## Design Philosophy
 
 - Each notebook is self-contained and fully executable top to bottom.
-- Physics and numerics develop in parallel — neither is a black box for the other.
-- Visualisations are central, not afterthoughts.
+- Physics and numerics develop in parallel.
 - Every step begins from something the student already understands.
 - The endpoint of each series is connected to real physics and active research.
 
