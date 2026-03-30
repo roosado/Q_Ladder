@@ -60,6 +60,8 @@ The entanglement entropy is the von Neumann entropy of the reduced density matri
 
 $$S_A = -\text{Tr}(\rho_A \log \rho_A) = -\sum_\alpha \lambda_\alpha^2 \log \lambda_\alpha^2$$
 
+Why this formula? The von Neumann entropy is the unique function of $\rho_A$ that satisfies three physically motivated axioms: it is zero for a pure state (no entanglement), it is maximised for the maximally mixed state (maximum entanglement), and it is additive for independent subsystems. These are exactly the properties we want a measure of entanglement to have. When evaluated on the eigenvalues $\lambda_\alpha^2$ of $\rho_A$, it reduces to the familiar Shannon entropy of the Schmidt coefficient distribution — the amount of classical information needed to describe which Schmidt state the system is in.
+
 Properties:
 - $S_A = 0$ for a product state (one $\lambda_\alpha = 1$, all others zero).
 - $S_A = \log \chi$ for a maximally entangled state (all $\lambda_\alpha = 1/\sqrt{\chi}$).

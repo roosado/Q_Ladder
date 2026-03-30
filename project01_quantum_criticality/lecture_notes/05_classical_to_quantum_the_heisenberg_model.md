@@ -44,7 +44,7 @@ you can see that the last two terms move excitations around the lattice — a sp
 
 In the classical ferromagnet ($J > 0$), the ground state is exactly $|\uparrow\uparrow\cdots\uparrow\rangle$ or $|\downarrow\downarrow\cdots\downarrow\rangle$ — these are exact eigenstates.
 
-In the quantum antiferromagnet ($J < 0$), the "classical" Neel state $|\uparrow\downarrow\uparrow\downarrow\cdots\rangle$ is *not* an eigenstate of the Heisenberg Hamiltonian. When the Hamiltonian acts on it, the $\hat{S}^+_i \hat{S}^-_j$ terms create configurations like $|\downarrow\uparrow\uparrow\downarrow\cdots\rangle$ — the state is immediately mixed with other configurations. The true ground state is a superposition over many classical configurations.
+In the quantum antiferromagnet ($J < 0$), the "classical" **Neel state** — the perfectly alternating configuration $|\uparrow\downarrow\uparrow\downarrow\cdots\rangle$ in which every spin is anti-aligned with its neighbours — is *not* an eigenstate of the Heisenberg Hamiltonian. When the Hamiltonian acts on it, the $\hat{S}^+_i \hat{S}^-_j$ terms create configurations like $|\downarrow\uparrow\uparrow\downarrow\cdots\rangle$ — the state is immediately mixed with other configurations. The true ground state is a superposition over many classical configurations.
 
 This means that even at $T = 0$, the system fluctuates — not due to thermal noise, but due to quantum mechanics. These are **quantum fluctuations**, and they are always present regardless of temperature.
 

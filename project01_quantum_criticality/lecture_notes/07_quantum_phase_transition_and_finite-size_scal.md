@@ -64,6 +64,8 @@ where $z = 1$ for the 1D TFIM. The closing of the gap at the QCP is one of the m
 
 The gap also encodes the **relaxation time**: $\tau \sim \Delta^{-1} \sim \xi^z$. Near the QCP, both the spatial correlation length $\xi$ and the temporal correlation length $\xi_\tau = \xi^z$ diverge. In $d$ spatial dimensions, the effective classical problem has $d + z$ dimensions — this is the quantum-to-classical mapping.
 
+This makes explicit the duality between the quantum and classical signatures of criticality: the diverging correlation length $\xi \sim |\Gamma - \Gamma_c|^{-\nu}$ that you measured via FSS in notebook 02 and the vanishing spectral gap $\Delta \sim L^{-z}$ that appears only in the quantum problem are two faces of the same phenomenon. Both diverge because the system cannot pick a preferred state — it is poised exactly between two competing phases.
+
 ---
 
 ## 6. Finite-Size Scaling for the Gap

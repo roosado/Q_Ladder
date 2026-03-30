@@ -46,6 +46,8 @@ The key takeaway: **finite-size effects are not numerical errors — they are co
 
 ## 3. Critical Exponents
 
+Why do we care about precisely characterising the singularities at a critical point? Because the exponents are **universal**: two systems with completely different microscopic details — different lattice geometries, different interaction ranges, different physical origins — can share identical critical exponents. This is the concept of universality, and it is what makes critical phenomena a fundamental subject rather than a collection of special cases. Measuring the exponents tells you which universality class a system belongs to, not just the details of one particular model.
+
 The critical point is characterised by a set of power-law singularities. Each one defines a critical exponent:
 
 **Order parameter ($\beta$):**

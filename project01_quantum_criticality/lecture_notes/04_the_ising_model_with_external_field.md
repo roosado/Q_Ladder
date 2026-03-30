@@ -26,11 +26,13 @@ The magnetization $m = N^{-1}\sum_i s_i$ now measures the response of the system
 
 The phase diagram in the $(T, h)$ plane has three regions:
 
-**Paramagnetic phase** ($T > T_c$ for any $h$, or $h \neq 0$ for any $T$): The magnetization $m$ varies smoothly and continuously as a function of $T$ and $h$. There is no phase transition.
+To orient yourself in this plane: the horizontal axis is temperature $T$ increasing to the right, and the vertical axis is field $h$, positive upward. The critical point $(T_c, 0)$ sits on the $h = 0$ axis. The ordered region lies to the left and below it; the disordered region fills the rest of the plane.
 
-**Ferromagnetic phase** ($T < T_c$, $h = 0$): Two degenerate states coexist — one with $m > 0$ (spin-up dominated) and one with $m < 0$.
+**Paramagnetic phase** ($T > T_c$ for any $h$, or $h \neq 0$ for any $T$): This region fills the right half of the diagram and both half-planes away from $h = 0$. The magnetization $m$ varies smoothly and continuously as a function of $T$ and $h$. There is no phase transition.
 
-**First-order transition line** ($T < T_c$, $h = 0$): As you vary $h$ through zero at fixed $T < T_c$, the equilibrium magnetization jumps discontinuously from a positive value to a negative value. This is a **first-order phase transition**.
+**Ferromagnetic phase** ($T < T_c$, $h = 0$): The narrow strip along the $h = 0$ axis below $T_c$. Two degenerate states coexist — one with $m > 0$ (spin-up dominated) and one with $m < 0$.
+
+**First-order transition line** ($T < T_c$, $h = 0$): As you vary $h$ through zero at fixed $T < T_c$, the equilibrium magnetization jumps discontinuously from a positive value to a negative value. This is a **first-order phase transition**. The transition line runs along the entire $h = 0$ axis from $T = 0$ up to $T_c$.
 
 The first-order line terminates at the point $(T_c, h = 0)$ — the critical point we studied in notebooks 01 and 02. At this endpoint, the jump in $m$ vanishes continuously and the transition becomes second-order (continuous).
 

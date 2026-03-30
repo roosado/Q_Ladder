@@ -24,7 +24,7 @@ The challenge: an MPS has $O(N \chi^2)$ free parameters. Direct gradient descent
 
 The key insight: if you fix all tensors in the MPS except one, the variational problem reduces to an eigenvalue problem for that single tensor.
 
-**Local update:** Fix all tensors $\{A_i\}$ except $A_k$. The energy as a function of $A_k$ alone is a quadratic form — equivalent to finding the ground state of an effective Hamiltonian $H_{\text{eff}}$ acting only on the degrees of freedom associated with site $k$ (and its bonds). This is a small eigenvalue problem of dimension $d\chi^2 \times d\chi^2$.
+**Local update:** Fix all tensors $\{A_i\}$ except $A_k$. The energy as a function of $A_k$ alone is a quadratic form — equivalent to finding the ground state of an **effective Hamiltonian** $H_{\text{eff}}$ acting only on the degrees of freedom associated with site $k$ (and its bonds). $H_{\text{eff}}$ is constructed by contracting all fixed MPS tensors $\{A_i\}_{i \neq k}$ with the full Hamiltonian from the left and right, producing a small matrix of dimension $d\chi^2 \times d\chi^2$ that encodes exactly the influence of the rest of the chain on site $k$. Solving this small eigenvalue problem with Lanczos costs $O(\chi^3)$ rather than $O(2^{2N})$.
 
 Solving this eigenvalue problem with Lanczos gives the optimal $A_k$ for the current environment.
 
@@ -42,6 +42,16 @@ The bond dimension $\chi$ is the central parameter of DMRG:
 - **Computational cost:** Each DMRG sweep costs $O(N \chi^3 d^2)$. Doubling $\chi$ increases the cost by a factor of 8.
 
 The standard workflow: start with a small $\chi$ to get a rough ground state, then increase $\chi$ until observables converge. Convergence is exponential for gapped systems and polynomial for critical ones.
+
+To put the cost in perspective:
+
+| Method | Memory | Time per ground state | Accessible $N$ |
+|---|---|---|---|
+| ED (full diagonalisation) | $O(4^N)$ | $O(8^N)$ | $\lesssim 18$ |
+| ED (Lanczos, lowest eigenvalue) | $O(2^N)$ | $O(k \cdot 2^N)$ | $\lesssim 40$ (with symmetry) |
+| DMRG ($\chi$ fixed) | $O(N \chi^2 d)$ | $O(N \chi^3 d^2)$ per sweep | $\sim 10^3$–$10^4$ (gapped) |
+
+The transition from Lanczos ED to DMRG is not just a quantitative improvement — it is a qualitative one. ED memory grows exponentially no matter what; DMRG memory grows linearly in $N$. For a gapped 1D system, a chain of 1000 sites with $\chi = 100$ is routine.
 
 ---
 

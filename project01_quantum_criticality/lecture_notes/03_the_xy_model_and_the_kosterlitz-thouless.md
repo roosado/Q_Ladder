@@ -77,7 +77,7 @@ The free energy of a vortex includes both an energy cost and an entropy gain. A 
 
 $$F_{\text{vortex}} \sim (\pi J - 2T)\log(L/a)$$
 
-This is the crucial formula. For $T < T_{BKT} = \pi J / 2$, the energy term dominates and $F_{\text{vortex}} > 0$: free vortices are suppressed, and only bound pairs exist. For $T > T_{BKT}$, the entropy term dominates and $F_{\text{vortex}} < 0$: free vortices proliferate throughout the system.
+This is the crucial formula. Setting $F_{\text{vortex}} = 0$ gives a mean-field estimate $T_{BKT} = \pi J / 2 \approx 1.57J$. This argument counts vortex entropy naively and does not account for the renormalisation of the spin stiffness as vortex pairs begin to proliferate. A full renormalisation group treatment lowers the actual transition temperature to $T_{BKT} \approx 0.893J$ for the 2D XY model on a square lattice — confirmed by Monte Carlo simulations. Below the actual $T_{BKT}$, the energy term dominates and $F_{\text{vortex}} > 0$: free vortices are suppressed, and only bound pairs exist. Above $T_{BKT}$, the entropy term wins and $F_{\text{vortex}} < 0$: free vortices proliferate throughout the system.
 
 ---
 
