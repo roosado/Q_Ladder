@@ -1,12 +1,12 @@
-# Lecture Notes — Step 9: Matrix Product States by Hand via SVD Truncation
+# Lecture Notes — Lecture 8: Matrix Product States
 
 ---
 
 ## Overview
 
-In notebook 08 we saw that the entanglement entropy controls how efficiently a quantum state can be represented. In this notebook we implement that idea directly: we take a many-body wavefunction obtained from exact diagonalisation, and decompose it into a **Matrix Product State (MPS)** by performing a sequence of singular value decompositions.
+In lecture 07 we saw that the entanglement entropy controls how efficiently a quantum state can be represented. In this lecture we implement that idea directly: we take a many-body wavefunction obtained from exact diagonalisation, and decompose it into a **Matrix Product State (MPS)** by performing a sequence of singular value decompositions.
 
-This notebook is the bridge between exact diagonalisation and DMRG. By the end you will understand what an MPS is, why it is an efficient representation for low-entanglement states, and exactly what information is lost when we truncate the bond dimension.
+This lecture is the bridge between exact diagonalisation and DMRG. By the end you will understand what an MPS is, why it is an efficient representation for low-entanglement states, and exactly what information is lost when we truncate the bond dimension.
 
 ---
 
@@ -14,7 +14,7 @@ This notebook is the bridge between exact diagonalisation and DMRG. By the end y
 
 Consider the ground state of a 20-site TFIM chain. The full wavefunction has $2^{20} \approx 10^6$ complex coefficients. For 40 sites this grows to $10^{12}$. The exponential growth of the Hilbert space is the fundamental obstacle to quantum many-body simulation.
 
-But we know from notebook 08 that this enormous wavefunction is not random — it has structure. For a gapped system, entanglement is local: only spins near a cut are significantly correlated across it. Most of those $10^6$ coefficients are nearly zero, or nearly determined by a small number of dominant correlations.
+But we know from lecture 07 that this enormous wavefunction is not random — it has structure. For a gapped system, entanglement is local: only spins near a cut are significantly correlated across it. Most of those $10^6$ coefficients are nearly zero, or nearly determined by a small number of dominant correlations.
 
 The MPS representation makes this structure explicit and allows us to work directly with the physically relevant degrees of freedom.
 
@@ -98,10 +98,4 @@ The entanglement entropy of a subsystem can be read directly from the singular v
 
 This is not a failure of the method — it is physics. The critical ground state genuinely has more entanglement than the gapped ones, and any finite-$\chi$ representation necessarily misses some of it.
 
----
-
-## 9. What Comes Next
-
-In notebook 10 we flip the perspective: instead of starting from a full ED wavefunction and truncating it to MPS form, we directly optimise an MPS ansatz to find the ground state — without ever constructing the exponentially large full wavefunction. This is the DMRG algorithm, and it is what makes tensor network methods powerful for systems far beyond ED reach.
-
-The sequential SVD decomposition you performed in this notebook is not just a pedagogical exercise — it is the step that runs inside DMRG every time a site tensor is updated. Understanding it deeply means understanding DMRG.
+The sequential SVD decomposition in this lecture is not just a pedagogical exercise — it is the step that runs inside DMRG every time a site tensor is updated. Understanding it deeply means understanding the algorithm in lecture 09. Rather than starting from a full ED wavefunction and truncating it to MPS form, DMRG directly optimises an MPS ansatz to find the ground state — without ever constructing the exponentially large full wavefunction.

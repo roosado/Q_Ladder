@@ -1,16 +1,16 @@
-# Lecture Notes — Step 11: The Kitaev Chain — Topology and Majorana Edge Modes
+# Lecture Notes — Lecture 11: Capstone: Topology and Majorana Edge Modes
 
 ---
 
 ## Overview
 
-The Kitaev chain is the final step in this series, and it brings together everything that came before — phase transitions, energy gaps, exact diagonalisation, and tensor networks — while introducing something genuinely new: **topological order**.
+The Kitaev chain is the final lecture in this series, and it brings together everything that came before — phase transitions, energy gaps, exact diagonalisation, and tensor networks — while introducing something genuinely new: **topological order**.
 
 The two phases of the Kitaev chain look the same from the perspective of any local order parameter. They have the same symmetry. The distinction between them is **global** — it is a property of the entire ground state wavefunction that cannot be changed without closing the energy gap. At the boundary between the two phases, **Majorana zero modes** appear: exotic quasiparticles that are their own antiparticles, and that carry quantum information in a way that is protected from local errors.
 
 ---
 
-## 1. The Hamiltonian
+## 1. The Kitaev Chain Hamiltonian
 
 The Kitaev chain is a model of spinless fermions on a 1D lattice with nearest-neighbour hopping and p-wave superconducting pairing:
 
@@ -115,32 +115,20 @@ In the notebook, we map out the Kitaev chain phase diagram in the $(\mu/t, \Delt
 
 ---
 
-## 9. Connection to Experiment and Active Research
+## 9. Where the Series Has Brought You
 
-The Kitaev chain is directly relevant to experimental efforts to build topological quantum computers. Candidate physical systems include:
-
-- **Semiconductor nanowires** (InAs, InSb) with strong spin-orbit coupling, proximity-coupled to an s-wave superconductor and placed in a magnetic field. The effective low-energy physics is described by the Kitaev chain.
-- **Magnetic atomic chains** on superconducting surfaces.
-- **Chains of Josephson junctions.**
-
-Signatures of Majorana zero modes — specifically, a robust zero-bias conductance peak in tunnelling spectroscopy — have been observed experimentally, though definitively establishing the topological origin of these signatures remains an active and contested research area.
-
----
-
-## 10. Where the Series Has Brought You
-
-| Notebook | Physics | Method |
+| Lecture | Physics | Method |
 |---|---|---|
-| 01 | 2D Ising model, phase transition | Metropolis Monte Carlo |
-| 02 | Critical exponents, universality | Finite-size scaling |
-| 03 | XY model, topological defects | Monte Carlo, vortex counting |
-| 04 | First-order transitions, Landau theory | Monte Carlo with field |
-| 05 | Quantum spins, many-body Hilbert space | Exact diagonalisation |
-| 06 | Quantum phase transition (TFIM) | ED, Hamiltonian construction |
-| 07 | Quantum FSS, spectral gap | ED, scaling collapse |
-| 08 | Entanglement entropy, area law | ED, Schmidt decomposition |
-| 09 | Matrix product states, SVD truncation | ED + MPS decomposition |
-| 10 | DMRG, large-scale simulation | TeNPy |
-| 11 | Topological phase, Majorana modes | ED + TeNPy |
+| 01 | 2D Ising model, thermal phase transition | Metropolis Monte Carlo |
+| 02 | Critical exponents, universality, FSS | Finite-size scaling |
+| 03 | Quantum spins, TFIM Hamiltonian, quantum-to-classical mapping | Pauli matrices, tensor products |
+| 04 | Quantum phase transition, spectral gap, scaling collapse | ED + FSS |
+| 05 | Many-body Hilbert space, sparse Hamiltonian, Lanczos | Exact diagonalisation I |
+| 06 | Energy spectrum, correlations, susceptibility, phase diagram | Exact diagonalisation II |
+| 07 | Bipartite entanglement, area law, central charge | Schmidt decomposition, SVD |
+| 08 | MPS representation, SVD truncation, canonical form | Tensor networks I |
+| 09 | DMRG algorithm, variational optimisation, convergence | Tensor networks II |
+| 10 | TeNPy, large-scale DMRG, phase diagram at $L \sim 500$ | Tensor networks III |
+| 11 | Topological order, Majorana fermions, bulk-boundary correspondence | ED + TeNPy |
 
 The series has taken you from thermal fluctuations in a classical model all the way to topological quantum phases and Majorana fermions — a journey that mirrors the development of condensed matter physics over the past three decades. The computational and conceptual tools you have built — Monte Carlo, finite-size scaling, exact diagonalisation, tensor networks — are the same ones used in active research today.

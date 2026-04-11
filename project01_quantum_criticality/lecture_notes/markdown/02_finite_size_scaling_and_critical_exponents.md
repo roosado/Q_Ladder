@@ -1,10 +1,10 @@
-# Lecture Notes — Step 2: Finite-Size Scaling and Critical Exponents
+# Lecture Notes — Lecture 2: Finite-Size Scaling and Critical Exponents
 
 ---
 
 ## Overview
 
-In notebook 01 we observed a phase transition but our estimates of $T_c$ were off, and the transition looked rounded rather than sharp. This notebook explains both of these facts and turns them into a systematic method for extracting exact critical exponents. The central tool is **finite-size scaling (FSS)** — a framework that relates the behaviour of a finite system to the universal properties of the infinite one.
+In lecture 01 we observed a phase transition but our estimates of $T_c$ were off, and the transition looked rounded rather than sharp. This notebook explains both of these facts and turns them into a systematic method for extracting exact critical exponents. The central tool is **finite-size scaling (FSS)** — a framework that relates the behaviour of a finite system to the universal properties of the infinite one.
 
 By the end you should understand what critical exponents are, why the Binder cumulant is such a useful observable, and how to perform a scaling collapse that reveals the universal scaling function underlying a phase transition.
 
@@ -169,6 +169,4 @@ This universality is why the Ising model matters so far beyond its original cont
 
 ## 10. What Comes Next
 
-We have now completely characterised the classical 2D Ising transition. In notebook 03 we add an external magnetic field, which breaks the $\mathbb{Z}_2$ symmetry and introduces a qualitatively different kind of transition — a **first-order** phase transition. Understanding the difference between first-order and continuous transitions is essential before we move into quantum models.
-
-After that, notebooks 04 and 05 introduce the XY model and the Heisenberg model — models with continuous symmetry groups instead of the discrete $\mathbb{Z}_2$ of the Ising model. These support fundamentally different kinds of order (or, in the XY case in 2D, no order at all — but something more subtle). Once we have built intuition for these classical models, notebook 06 makes the jump to quantum mechanics, where the phase transition is driven by quantum rather than thermal fluctuations.
+We have now completely characterised the classical 2D Ising transition. Lecture 03 makes the jump to quantum mechanics, introducing the 1D Transverse-Field Ising Model — the simplest quantum model with a phase transition. The FSS tools developed here apply directly: the same Binder cumulant, susceptibility scaling, and data collapse will be used in lecture 04 to characterise the quantum phase transition, with $\Gamma/J$ playing the role of temperature.

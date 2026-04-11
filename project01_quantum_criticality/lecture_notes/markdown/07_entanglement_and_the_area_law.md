@@ -1,4 +1,4 @@
-# Lecture Notes — Step 8: Entanglement Entropy and the Area Law
+# Lecture Notes — Lecture 7: Entanglement and the Area Law
 
 ---
 
@@ -8,7 +8,7 @@ Entanglement is one of the defining features of quantum mechanics with no classi
 
 In many-body physics, entanglement is not just a curiosity — it is a diagnostic tool. The amount of entanglement in the ground state of a quantum system encodes information about its phase. In gapped phases the entanglement is local (the **area law**). At a critical point the entanglement grows logarithmically — a fingerprint that identifies the universality class through the **central charge** of the underlying conformal field theory.
 
-This notebook connects the physics of quantum phase transitions to the mathematics that will make tensor networks possible.
+This lecture connects the physics of quantum phase transitions to the mathematics that will make tensor networks possible.
 
 ---
 
@@ -82,7 +82,7 @@ $$S_A \to S_{\max} = \text{const} \quad \text{(1D gapped system)}$$
 
 Intuitively: in a gapped phase, correlations decay exponentially over the length scale $\xi$. Only spins near the boundary between $A$ and $B$ are significantly entangled with each other. The entanglement is local.
 
-The area law has profound consequences for numerical methods. If a state satisfies the area law, it can be efficiently represented as a Matrix Product State with a bond dimension $\chi$ that depends only on the entanglement entropy — not on the system size. This is why DMRG (notebook 10) works so well for gapped 1D systems.
+The area law has profound consequences for numerical methods. If a state satisfies the area law, it can be efficiently represented as a Matrix Product State with a bond dimension $\chi$ that depends only on the entanglement entropy — not on the system size. This is why DMRG (lectures 09–10) works so well for gapped 1D systems.
 
 ---
 
@@ -127,12 +127,4 @@ By computing $S_A(\ell)$ for several values of $\Gamma/J$, we see three distinct
 
 This three-way distinction — two area law phases separated by a critical point with logarithmic entanglement — is a general feature of 1D quantum systems and can be used as a diagnostic tool even when the order parameter is not known.
 
----
-
-## 9. From Entanglement to Tensor Networks
-
-The entanglement entropy tells us how much classical information is needed to describe a quantum state. For a state satisfying the area law, the Schmidt decomposition has only $\chi = e^{S_{\max}}$ significant singular values. Truncating to these $\chi$ values gives a faithful representation of the state as a **Matrix Product State (MPS)**.
-
-This truncation is not an approximation for gapped systems — the discarded singular values are exponentially small. For critical systems, $\chi$ must grow as $\ell^{c/6}$ to maintain fixed accuracy — polynomial rather than exponential.
-
-The entanglement structure thus dictates the optimal tensor network representation. Understanding the area law and its violation at criticality is the theoretical foundation for everything in notebooks 09 and 10.
+The entanglement entropy tells us how much classical information is needed to describe a quantum state. For a state satisfying the area law, the Schmidt decomposition has only $\chi = e^{S_{\max}}$ significant singular values. Truncating to these $\chi$ values gives a faithful representation of the state as a **Matrix Product State (MPS)** — the subject of lecture 08.

@@ -1,4 +1,4 @@
-# Lecture Notes — Step 1: The 2D Ising Model
+# Lecture Notes — Lecture 1: The Classical 2D Ising Model
 
 ---
 
@@ -130,8 +130,8 @@ The magnetization time series also tells a story. At low temperature, $m$ fluctu
 
 ---
 
-## 9. Limitations and What Comes Next
+## 9. Limitations and Finite-Size Effects
 
 The simulation you just ran has one obvious limitation: the transition looks rounded rather than sharp, and the apparent $T_c$ does not quite match Onsager's value. This is not a simulation error — it is a genuine physical effect called *finite-size rounding*. A 25×25 lattice is not thermodynamically large, and the correlation length cannot diverge beyond the system size.
 
-In the next notebook we take this limitation seriously and turn it into a tool. By running the same simulation at several system sizes and comparing the results, we can extract the exact critical temperature and critical exponents without any assumptions about the functional form of the transition. This is the method of *finite-size scaling*, and it is one of the most powerful techniques in computational statistical mechanics.
+Lecture 02 takes this limitation seriously and turns it into a tool. By running the same simulation at several system sizes and comparing the results, we can extract the exact critical temperature and critical exponents without any assumptions about the functional form of the transition. This is the method of *finite-size scaling*, and it is one of the most powerful techniques in computational statistical mechanics.
