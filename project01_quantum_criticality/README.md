@@ -1,4 +1,4 @@
-# 12 Steps to Quantum Criticality
+# Ladder to Quantum Criticality
 
 *From classical Monte Carlo to entanglement entropy and tensor networks*
 
