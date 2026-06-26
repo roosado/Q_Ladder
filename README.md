@@ -9,9 +9,9 @@ The project framework is all written by Claude, along with the first versions of
 
 | # | Series | Domain | Tools |
 |---|--------|--------|-------|
-| 01 | [12 Steps to Quantum Criticality](project01_quantum_criticality/) | Statistical mechanics, many-body, QI | NumPy, SciPy, TeNPy |
-| 02 | [12 Steps to Superconducting Qubits](project02_superconducting_qubits/) | Circuit QED, open systems | NumPy, QuTiP |
-| 03 | [12 Steps to Density Functional Theory](project03_dft/) | Electronic structure | NumPy, SciPy, GPAW |
+| 01 | [Ladder to Quantum Criticality](project01_quantum_criticality/) | Statistical mechanics, many-body, QI | NumPy, SciPy, TeNPy |
+| 02 | [Ladder to Superconducting Qubits](project02_superconducting_qubits/) | Circuit QED, open systems | NumPy, QuTiP |
+| 03 | [Ladder to Density Functional Theory](project03_dft/) | Electronic structure | NumPy, SciPy, GPAW |
 
 ## Design Philosophy
 
