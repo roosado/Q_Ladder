@@ -1,4 +1,4 @@
-# 12 Steps to Density Functional Theory
+# Ladder to Density Functional Theory
 
 *From the variational principle to a working self-consistent Kohn-Sham solver*
 
