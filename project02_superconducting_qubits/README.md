@@ -1,9 +1,10 @@
-# 12 Steps to Superconducting Qubits
+# Ladder to Superconducting Qubits
 
 *From classical Coulomb blockade to circuit QED and decoherence engineering*
 
-**Starting point:** Single electron transistor — classical electrostatics and Coulomb blockade
-**Endpoint:** Dispersive readout, gate design, and the physical origins of decoherence in transmon qubits
+**Starting point:** Single electron transistor, classical electrostatics, and Coulomb blockade.
+
+**Endpoint:** Dispersive readout, gate design, and the physical origins of decoherence in transmon qubits.
 
 ## Notebooks
 
