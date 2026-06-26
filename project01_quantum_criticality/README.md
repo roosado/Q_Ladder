@@ -3,6 +3,7 @@
 *From classical Monte Carlo to entanglement entropy and tensor networks*
 
 **Starting point:** 2D Ising model
+
 **Endpoint:** Entanglement entropy scaling at a quantum phase transition; introduction to Matrix Product States
 
 ## Notebooks
