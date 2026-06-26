@@ -2,8 +2,9 @@
 
 *From the variational principle to a working self-consistent Kohn-Sham solver*
 
-**Starting point:** Variational principle and Hartree equations for helium
-**Endpoint:** A working self-consistent Kohn-Sham DFT solver for a 1D model system
+**Starting point:** Variational principle and Hartree equations for helium.
+
+**Endpoint:** A working self-consistent Kohn-Sham DFT solver for a 1D model system.
 
 ## Notebooks
 
